@@ -1,0 +1,18 @@
+mkdir atividade
+mkdir trabalho
+cd atividade
+echo. senai > panda.txt
+copy panda.txt ..\trabalho\panda.txt
+echo. animal > capivara.txt
+dir
+cd ..
+move atividade\capivara.txt trabalho\capivara.txt
+cd trabalho
+ren capivara.txt batch.txt
+pause
+del batch.txt
+del panda.txt
+cd ..
+rmdir /s atividade
+rmdir trabalho
+dir 
